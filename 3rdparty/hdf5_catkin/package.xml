@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>hdf5_catkin</name>
+  <version>0.0.1</version> 
+  <description>hdf5_catkin</description>
+  <maintainer email="simomaur@student.ethz.ch">Simon Maurer</maintainer>
+  <author>Simon Maurer</author>
+  <license>New BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+</package>
