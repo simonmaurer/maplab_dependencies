@@ -1,3 +1,8 @@
 # This overrides the dependency tracker with the hdf5 library file.
-file(GLOB HDF5Libraries @CATKIN_DEVEL_PREFIX@/lib/libhdf5_*)
-set( @PROJECT_NAME@_LIBRARIES ${HDF5Libraries})
+#file(GLOB HDF5Libraries @CATKIN_DEVEL_PREFIX@/lib/libhdf5_*)
+#set( @PROJECT_NAME@_LIBRARIES ${HDF5Libraries})
+set( @PROJECT_NAME@_LIBRARIES
+	@CATKIN_DEVEL_PREFIX@/lib/libhdf5${CMAKE_SHARED_LIBRARY_SUFFIX}
+	@CATKIN_DEVEL_PREFIX@/lib/libhdf5_cpp${CMAKE_SHARED_LIBRARY_SUFFIX}
+	@CATKIN_DEVEL_PREFIX@/lib/libhdf5_hl${CMAKE_SHARED_LIBRARY_SUFFIX}
+	@CATKIN_DEVEL_PREFIX@/lib/libhdf5_hl_cpp${CMAKE_SHARED_LIBRARY_SUFFIX} )
